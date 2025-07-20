@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Ride</title>
+  <link rel="stylesheet" href="estilo_editRide.css">
+</head>
+<body>
+  <!-- Encabezado centrado con logo y texto -->
+  <div class="top-logo">
+    <img src="img/logo.png" alt="Logo">
+    <span>AVENTONES</span>
+  </div>
+
+  <!-- Barra de navegación -->
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Rides</a></li>
+        <li><a href="#">Bookings</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-area">
+      <input type="text" placeholder="Search...">
+      <div class="profile-menu">
+        <img src="img/avatar.png" alt="User Icon">
+        <ul class="dropdown">
+          <li>Logout</li>
+          <li>Profile</li>
+          <li>Configuration</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <h2>Edit Ride</h2>
+ <form class="ride-form">
+  <div class="top-row">
+    <div class="field-group">
+      <label>Departure from</label>
+      <input type="text">
+    </div>
+
+    <div class="field-group">
+      <label>Arrive To</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="field-group days-below">
+    <label>Days</label>
+    <div class="checkboxes">
+      <label><input type="checkbox"> Mon</label>
+      <label><input type="checkbox"> Tue</label>
+      <label><input type="checkbox"> Wed</label>
+      <label><input type="checkbox"> Thu</label>
+      <label><input type="checkbox"> Fri</label>
+      <label><input type="checkbox"> Sat</label>
+      <label><input type="checkbox"> Sun</label>
+    </div>
+  </div>
+</form>
+
+      <div class="three-fields">
+        <div class="field-group">
+          <label>Time</label>
+          <input type="time" value="10:00">
+        </div>
+        <div class="field-group">
+          <label>Seats</label>
+          <input type="number" min="1" value="2">
+        </div>
+        <div class="field-group">
+          <label>Fee</label>
+          <input type="number" min="0" value="15">
+        </div>
+      </div>
+
+      <fieldset class="vehicle-details">
+        <legend>Vehicle Details</legend>
+        <div class="three-fields">
+          <div class="field-group">
+            <label>Make</label>
+            <select>
+              <option>Nissan</option>
+              <option>Honda</option>
+              <option>Toyota</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label>Model</label>
+            <input type="text" placeholder="Car Model">
+          </div>
+          <div class="field-group">
+            <label>Year</label>
+            <input type="number" value="2020">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <a href="#">Cancel</a>
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <a href="#">Home</a> | 
+    <a href="#">Rides</a> | 
+    <a href="#">Bookings</a> | 
+    <a href="#">Settings</a> | 
+    <a href="#">Login</a> | 
+    <a href="#">Register</a>
+    <p>&copy; Aventones.com</p>
+  </footer>
+</body>
+</html>

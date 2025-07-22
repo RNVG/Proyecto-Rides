@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="estilo_EditProfile.css">
+</head>
+<body>
+  <div class="top-logo">
+    <img src="img/logo.png" alt="Logo">
+    <span>AVENTONES</span>
+  </div>
+
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Rides</a></li>
+        <li><a href="#">Bookings</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-area">
+      <input type="text" placeholder="Search...">
+      <div class="profile-menu">
+        <img src="img/avatar.png" alt="User Icon">
+        <ul class="dropdown">
+          <li>Logout</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Edit Profile</h2>
+
+    <form class="config-form">
+      <div class="form-row">
+        <div>
+          <label>First Name</label>
+          <input type="text" value="Carlos">
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" value="Martínez">
+        </div>
+      </div>
+
+      <label>Email</label>
+      <input type="email" value="carlos.mtz99@example.com">
+
+      <div class="form-row">
+        <div>
+          <label>Password</label>
+          <input type="password" value="123456">
+        </div>
+        <div>
+          <label>Repeat Password</label>
+          <input type="password" value="123456">
+        </div>
+      </div>
+
+      <label>Address</label>
+      <input type="text" value="300m norte del parque central">
+
+      <div class="form-row">
+        <div>
+          <label>Country</label>
+          <select>
+            <option>Costa Rica</option>
+            <option>Panamá</option>
+            <option>Colombia</option>
+          </select>
+        </div>
+        <div>
+          <label>State</label>
+          <input type="text" value="San José">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label>City</label>
+          <input type="text" value="Escazú">
+        </div>
+        <div>
+          <label>Phone Number</label>
+          <input type="text" value="8888-9999">
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="#" class="cancel">Cancel</a>
+        <button class="save" type="submit">Save</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <a href="#">Home</a> |
+    <a href="#">Rides</a> |
+    <a href="#">Bookings</a> |
+    <a href="#">Settings</a> |
+    <a href="#">Login</a> |
+    <a href="#">Register</a>
+    <p>&copy; Aventones.com</p>
+  </footer>
+</body>
+</html>

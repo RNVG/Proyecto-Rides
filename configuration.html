@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Configuration</title>
+  <link rel="stylesheet" href="estilo_configuration.css" />
+</head>
+<body>
+  <div class="top-logo">
+    <img src="img/logo.png" alt="Logo" />
+    <span>AVENTONES</span>
+  </div>
+
+  <header>
+    <ul class="nav-links">
+      <li><a href="MyRides.html" class="active">Home</a></li>
+      <li><a href="#">Rides</a></li>
+      <li><a href="#">Bookings</a></li>
+    </ul>
+    <div class="user-area">
+      <input type="text" placeholder="Search..." />
+      <div class="profile-menu">
+        <img src="img/avatar.png" alt="Perfil" />
+        <ul class="dropdown">
+          <li>Logout</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Configuration</h2>
+
+    <form class="config-form">
+      <label for="name">Public Name</label>
+      <input type="text" id="name" name="name" value="Bladimir"/>
+
+      <label for="bio">Public Bio</label>
+      <textarea id="bio" name="bio" rows="5"></textarea>
+
+      <div class="buttons">
+        <a href="#" class="cancel">Cancel</a>
+        <button type="submit" class="save">Save</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <a href="#">Home</a> |
+    <a href="#">Rides</a> |
+    <a href="#">Bookings</a> |
+    <a href="#">Settings</a> |
+    <a href="#">Login</a> |
+    <a href="#">Register</a>
+    <p>© Aventones.com</p>
+  </footer>
+</body>
+</html>

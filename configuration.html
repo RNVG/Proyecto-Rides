@@ -7,29 +7,35 @@
   <link rel="stylesheet" href="estilo_configuration.css" />
 </head>
 <body>
-  <div class="top-logo">
-    <img src="img/logo.png" alt="Logo" />
-    <span>AVENTONES</span>
-  </div>
 
-  <header>
-    <ul class="nav-links">
-      <li><a href="MyRides.html" class="active">Home</a></li>
-      <li><a href="#">Rides</a></li>
-      <li><a href="#">Bookings</a></li>
-    </ul>
-    <div class="user-area">
+  <!-- barra y navbar-->
+  <header class="navbar">
+    <div class="left-section">
+      <img src="img/logo.png" alt="Logo" />
+      <span>AVENTONES</span>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="MyRides.html" class="active">Rides</a></li>
+          <li><a href="view_booking.html">Bookings</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="right-section">
       <input type="text" placeholder="Search..." />
       <div class="profile-menu">
-        <img src="img/avatar.png" alt="Perfil" />
+        <img src="img/avatar.png" alt="User Icon" />
         <ul class="dropdown">
-          <li>Logout</li>
-          <li>Settings</li>
+          <li><a href="login.html">Logout</a></li>
+          <li><a href="editProfile.html">Profile</a></li>
+          <li><a href="configuration.html">Configuration</a></li>
         </ul>
       </div>
     </div>
   </header>
 
+  <!-- contenido prin -->
   <main>
     <h2>Configuration</h2>
 
@@ -47,14 +53,18 @@
     </form>
   </main>
 
+  <!-- pie de pagina -->
   <footer>
-    <a href="#">Home</a> |
-    <a href="#">Rides</a> |
-    <a href="#">Bookings</a> |
-    <a href="#">Settings</a> |
-    <a href="#">Login</a> |
-    <a href="#">Register</a>
-    <p>© Aventones.com</p>
+    <div class="footer-links">
+      <a href="Home.html">Home</a>
+      <a href="MyRides.html">Rides</a>
+      <a href="view_booking.html">Bookings</a>
+      <a href="configuration.html">Settings</a>
+      <a href="login.html">Login</a>
+      <a href="registro_clientes.html">Register</a>
+    </div>
+    <p>&copy; 2025 Aventones.com</p>
   </footer>
+
 </body>
 </html>

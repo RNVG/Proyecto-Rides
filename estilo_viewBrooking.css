@@ -10,6 +10,7 @@ body {
   background-color: white;
 }
 
+/* Logo superior */
 .top-logo {
   display: flex;
   align-items: center;
@@ -28,44 +29,37 @@ body {
   letter-spacing: 2px;
 }
 
-header {
-  background-color: #f7f7f7;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
-  border-bottom: 1px solid #ddd;
+  background-color: #f7f7f7;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ccc;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  padding: 8px 16px;
-  border-radius: 4px;
-}
-
-.nav-links a.active,
-.nav-links a:hover {
-  background-color: #007bff;
-  color: white;
-}
-
-.user-area {
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.user-area input {
-  padding: 5px 10px;
+.nav-left a {
+  text-decoration: none;
+  color: black;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.nav-left a.active,
+.nav-left a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.search-box {
+  padding: 6px 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -74,21 +68,22 @@ header {
   position: relative;
 }
 
-.profile-menu img {
-  width: 30px;
+.profile-menu img.avatar {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 
-.dropdown {
+.profile-menu .dropdown {
   list-style: none;
   position: absolute;
   right: 0;
-  top: 35px;
+  top: 30px;
   background-color: white;
   border: 1px solid #ccc;
   display: none;
   padding: 0;
-  width: 100px;
+  width: 120px;
   z-index: 10;
 }
 
@@ -107,22 +102,24 @@ header {
   border-bottom: none;
 }
 
+/* Contenido principal */
 main {
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
-  flex: 1; 
+  flex: 1;
 }
 
-h2 {
+main h2 {
   text-align: center;
   font-weight: 300;
+  font-size: 24px;
   border-bottom: 1px solid #ccc;
-  display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 30px;
 }
 
+/* Tabla de bookings */
 .bookings-table {
   width: 100%;
   border-collapse: collapse;
@@ -132,7 +129,7 @@ h2 {
 .bookings-table th,
 .bookings-table td {
   border: 1px solid #ccc;
-  padding: 30px 20px; 
+  padding: 20px;
   text-align: left;
   vertical-align: middle;
 }
@@ -141,54 +138,45 @@ h2 {
   background-color: #f3f3f3;
 }
 
-.avatar {
+.bookings-table .avatar {
   width: 32px;
   height: 32px;
   vertical-align: middle;
   margin-right: 10px;
 }
 
+/* Enlaces dentro de la tabla */
 td a {
   color: #007bff;
   text-decoration: none;
-  margin: 0 2px;
+  margin: 0 5px;
 }
 
 td a:hover {
   text-decoration: underline;
 }
 
+/* Pie de página */
 footer {
   background-color: #f3f3f3;
   text-align: center;
   padding: 20px;
   font-size: 14px;
-  margin-top: 60px;
+  margin-top: auto;
   border-top: 1px solid #ccc;
 }
 
-footer a {
+.footer-links a {
   margin: 0 5px;
   text-decoration: none;
   color: #007bff;
 }
 
-footer a:hover {
+.footer-links a:hover {
   text-decoration: underline;
 }
 
 footer p {
   margin-top: 10px;
   color: gray;
-}
-
-main h2 {
-  text-align: center;
-  font-weight: 300;
-  font-size: 24px;
-  border-bottom: 1px solid #ccc;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 30px;
-  width: 100%;
 }
